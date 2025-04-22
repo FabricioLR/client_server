@@ -17,8 +17,6 @@ app.get("/", (request, response) => {
 })
 
 io.once("connection", (socket) => {
-    user.id = socket.id
-
     const client = new net.Socket()
 
     client.connect(50755, '189.39.6.18')

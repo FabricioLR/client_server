@@ -9,7 +9,7 @@ const app = express()
 const server = http.createServer(app)
 const io = new socketio.Server(server)
 
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 10000
 
 app.use(cors())
 

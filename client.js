@@ -2,7 +2,8 @@ const net = require('net');
 const client = require("socket.io-client")
 
 const server = net.createServer((socket) => {
-    const socket_ = client.io("https://client-server-0wuk.onrender.com/", {
+    const socket_ = client.io("https://client-server-tkmy.onrender.com", {
+    //const socket_ = client.io("http://localhost:10000", {
         autoConnect: true
     });
 
